@@ -1,13 +1,13 @@
 $(document).ready(function(){
     'use strict';
     function loadMap() {
-    var center = new google.maps.LatLng(47.846460,35.149270);
+    var center = new google.maps.LatLng(49.568819, 34.585753);
         var marker = new google.maps.Marker({
             position: center,
             draggable:true,
             icon:'img/favicon.png',
             title:'Click to zoom',
-            animation: google.maps.Animation.BOUNCE
+            // animation: google.maps.Animation.BOUNCE
         });
         var mapOptions = {
             center: center,
