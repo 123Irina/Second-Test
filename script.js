@@ -46,7 +46,7 @@ $(document).ready(function(){
         itemSelector: '.element-item',
         percentPosition: true
     });
-    $('.filters button').click(function () {
+    $('.filters-button-group button').click(function () {
         var filterValue = $(this).data('filter');
         console.log(filterValue);
         $isotopeGrid.isotope({
