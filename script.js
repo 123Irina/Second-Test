@@ -53,5 +53,20 @@ $(document).ready(function(){
             filter: filterValue
         });
     });
+
+//    Slick-slider
+
+    $('.slick-slider').slick({
+        dots: true,
+        infinite: true,
+        speed: 400,
+        fade: true,
+        cssEase: 'linear',
+        slidesToShow: 1,
+        arrows: false,
+        centerMode: true,
+        lazyLoad: 'ondemand'
+
+    });
 });
 
