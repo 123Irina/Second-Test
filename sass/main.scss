@@ -124,6 +124,36 @@ section.portfolio {
   p {
     margin-bottom: 80px;
   }
+  .button-group {
+    margin: 0 auto 60px;
+    max-width: 375px;
+    font-size: 0;
+  }
+  button {
+    padding: 0 0 15px;
+    border: none;
+    border-bottom: 1.5px solid transparent;
+    background: none;
+    text-align: center;
+    font-size: 16px;
+    color: rgb(70,70,70);
+    font-family: $font-open-sans;
+    margin-right: 30px;
+    &:last-child {
+      margin-right: 0;
+    }
+    &:active, &:focus {
+      outline: none;
+    }
+    &.is-checked {
+      border-bottom: 1.5px solid #19bd99;
+    }
+  }
+  .element-item {
+    border: 5px solid #f3f3f3;
+    width: 270px;
+
+  }
 }
 section.TheTeam {
   h2 {
@@ -134,7 +164,52 @@ section.TheTeam {
   }
 
   }
+.slide {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1024px;
+  margin: 0 auto;
+  .text {
+    text-align: right;
+    padding-right: 45px;
+    h3, h4 {
+      border-right: 4px solid #19bd99;
+      margin-right: -45px;
+      padding-right: 41px;
+    }
+    h3 {
+      font-size: 20px;
+      line-height: 36px;
+      letter-spacing: 1px;
+      color: rgb(70,70,70);
+      font-family: $font-open-sans;
+      font-weight: 300;
+      margin-bottom: 0;
+      margin-top: 30px;
+    }
 
+    h4 {
+      font-size: 14px;
+      letter-spacing: 1px;
+      color: rgb(129,134,142);
+      font-family: $font-source;
+      font-weight: 300;
+      font-style: italic;
+      text-align: right;
+      text-transform: uppercase;
+      margin-top: 0;
+      margin-bottom: 30px;
+    }
+    p{
+      max-width: 373px;
+      font-size: 14px;
+      line-height: 25px;
+      color: rgb(129,134,142);
+      text-align: right;
+      letter-spacing: 0.5px;
+    }
+  }
+}
 .TeamDown {
    color: rgb(255,255,255);
    background: url("../img/bg_team_down.png") no-repeat;
@@ -158,67 +233,57 @@ section.TheTeam {
      background-color: transparent;
      border: 1px solid #ffffff;
    }
-  .testimonilas {
-    margin-top: 80px;
+ }
+.testimonilas {
+  padding-top: 80px;
+  padding-bottom: 100px;
+  background-color: #f3f3f3;
     h2 {
       color: rgb(51, 59, 70);
     }
     p {
       color: rgb(129, 134, 142);
+      margin-bottom: 60px;
     }
-  }
- }
-.slide {
-  display: flex;
-  justify-content: space-between;
-  max-width: 1024px;
-  margin: 0 auto;
-}
-.text {
-  text-align: right;
-  padding-right: 45px;
-  h3, h4 {
-    border-right: 4px solid #19bd99;
-    margin-right: -45px;
-    padding-right: 41px;
-  }
-  h3 {
-    font-size: 20px;
-    line-height: 36px;
-    letter-spacing: 1px;
-    color: rgb(70,70,70);
-    font-family: $font-open-sans;
-    font-weight: 300;
-    margin-bottom: 0;
-    margin-top: 30px;
-  }
 
-  h4 {
-    font-size: 14px;
-    letter-spacing: 1px;
-    color: rgb(129,134,142);
-    font-family: $font-source;
-    font-weight: 300;
-    font-style: italic;
-    text-align: right;
-    text-transform: uppercase;
-    margin-top: 0;
-    margin-bottom: 30px;
   }
-  p{
-    max-width: 373px;
-    font-size: 14px;
-    line-height: 25px;
-    color: rgb(129,134,142);
-    text-align: right;
-    letter-spacing: 0.5px;
-  }
-}
 
 .slider_2 {
   display: flex;
   justify-content: space-between;
+  max-width: 1170px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 52px 95px 60px;
+  img {
+    width: 130px;
+    height: 130px;
+  }
+  .text {
+    p {
+      max-width: 757px;
+      letter-spacing: 1px;
+      line-height: 28px;
+      color: rgb(129,134,142);
+      font-family: $font-open-sans;
+      text-align: left;
+      font-size: 16px;
+      margin-bottom: 0;
+      &:nth-child(2){
+        color: rgb(25,189,154);
+        font-weight: bold;
+        margin-top: 20px;
+      }
+      &:nth-child(3){
+        font-size: 14px;
+        line-height: 20px;
+        color: rgb(70,70,70);
+        margin-bottom: 115px;
+      }
+    }
+  }
 }
+
 
 section.contact {
   padding-top: 75px;
