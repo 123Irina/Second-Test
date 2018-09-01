@@ -2,10 +2,12 @@
 @import "mixin";
 @import "normalize";
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Source+Sans+Pro');
-//@font-face {
-//url('../fonts/DejaVuSansMono.ttf') format('truetype');
-//url('../fonts/DejaVuSansMono-Bold.ttf') format('truetype');
-//}
+@font-face {
+  font-family: "DejaVuSans";
+  src: url('../fonts/DejaVuSans.ttf') format('truetype');
+  font-family: "DejaVuSans-bold";
+  src: url('../fonts/DejaVuSans-Bold.ttf') format('truetype');
+}
   * {
     box-sizing: border-box;
   }
@@ -18,7 +20,7 @@ h1, h2 {
 
 }
 h2 {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: $font-source;
   font-weight: 300;
   margin-bottom: 35px;
   color: rgb(51,59,70);
@@ -27,7 +29,7 @@ h2 {
   letter-spacing: 4px;
 }
 p {
-  font-family: 'Open Sans', sans-serif;
+  font-family: $font-open-sans;
   letter-spacing: 1px;
   text-align: center;
   margin: 0 auto;
@@ -38,6 +40,9 @@ p {
 }
 ul {
   list-style: none;
+}
+li{
+  display: inline-block;
 }
 img {
   display: block;
@@ -62,14 +67,14 @@ header {
     h1 {
       float: left;
       font-size: 24px;
-      font-family: "DejaVuSansMono", sans-serif;
+      font-family: "DejaVuSans-bold", sans-serif;
 
   }
     ul {
       float: right;
-      font-family: 'Open Sans', sans-serif;
+      font-family: $font-open-sans;
+      padding-left: 0;
       li{
-        display: inline-block;
         min-width: 80px;
         margin-right: 30px;
         line-height: 33px;
@@ -90,11 +95,13 @@ header {
     letter-spacing: 7px;
     line-height: 70px;
     margin-top: 215px;
+    color: rgb(255,255,255);
   }
   p {
     max-width: 624px;
     font-size: 16px;
     line-height: 28px;
+    color: rgb(255,255,255);
   }
   a.slide_down {
     display: block;
@@ -125,7 +132,9 @@ section.TheTeam {
   p {
     margin-bottom: 60px;
   }
-}
+
+  }
+
 .TeamDown {
    color: rgb(255,255,255);
    background: url("../img/bg_team_down.png") no-repeat;
@@ -135,21 +144,138 @@ section.TheTeam {
      font-size: 20px;
      line-height: 25px;
      color: rgb(255,255,255);
+     margin-bottom: 35px;
    }
    a {
      font-size: 16px;
-     line-height: 12px;
+     line-height: 37px;
      display: block;
      margin: 0 auto;
-     font-family: 'Open Sans', sans-serif;
+     font-family: $font-open-sans;
      text-align: center;
+     width: 140px;
+     border-radius: 19px;
+     background-color: transparent;
+     border: 1px solid #ffffff;
    }
+  .testimonilas {
+    margin-top: 80px;
+    h2 {
+      color: rgb(51, 59, 70);
+    }
+    p {
+      color: rgb(129, 134, 142);
+    }
+  }
  }
+.slide {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+.text {
+  text-align: right;
+  padding-right: 45px;
+  h3, h4 {
+    border-right: 4px solid #19bd99;
+    margin-right: -45px;
+    padding-right: 41px;
+  }
+  h3 {
+    font-size: 20px;
+    line-height: 36px;
+    letter-spacing: 1px;
+    color: rgb(70,70,70);
+    font-family: $font-open-sans;
+    font-weight: 300;
+    margin-bottom: 0;
+    margin-top: 30px;
+  }
+
+  h4 {
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: rgb(129,134,142);
+    font-family: $font-source;
+    font-weight: 300;
+    font-style: italic;
+    text-align: right;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+  p{
+    max-width: 373px;
+    font-size: 14px;
+    line-height: 25px;
+    color: rgb(129,134,142);
+    text-align: right;
+    letter-spacing: 0.5px;
+  }
+}
+
+.slider_2 {
+  display: flex;
+  justify-content: space-between;
+}
+
 section.contact {
+  padding-top: 75px;
+  p {
+    margin-bottom: 70px;
+  }
   #map {
     min-height: 440px;
     max-width: 100%;
     margin: 0 auto;
     border: 1px solid grey;
   }
+}
+
+footer {
+  padding: 70px 0;
+  h5 {
+    text-transform: uppercase;
+    font-family: "DejaVuSans-bold", sans-serif;
+    font-weight: 900;
+    text-align: center;
+    font-size: 24px;
+    color: rgb(0,0,0);
+  }
+  p {
+    margin-bottom: 40px;
+  }
+  ul {
+  max-width: 175px;
+  margin: 0 auto;
+  padding: 0;
+  font-size: 0;
+  li {
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    margin-right: 10px;
+    &:nth-child(1) {
+      background-image: url("../img/icon_footer_faceb.png");
+    }
+    &:nth-child(2) {
+      background-image: url("../img/icon_footer_twit.png");
+    }
+    &:nth-child(3) {
+      background-image: url("../img/icon_footer_in.png");
+    }
+    &:nth-child(4) {
+      background-image: url("../img/icon_footer_insta.png");
+    }
+    &:nth-child(5) {
+      background-image: url("../img/icon_footer_v.png");
+      margin-right: 0;
+    }
+    a {
+      display: block;
+      height: 100%;
+    }
+  }
+ }
 }

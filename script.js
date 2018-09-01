@@ -11,19 +11,9 @@ $(document).ready(function(){
         });
         var mapOptions = {
             center: center,
-            zoom:12,
-            panControl: true,
-            zoomControl: true,
-            zoomControlOptions: {
-                style: google.maps.ZoomControlStyle.SMALL,
-                position:google.maps.ControlPosition.LEFT_BOTTOM
-            },
-            mapTypeControl: google.maps.MapTypeControlStyle.DROPDOWN_MENU,
-            scaleControl: true,
-            streetViewControl: true,
-            overviewMapControl: true,
-
-        };
+            zoom:15,
+            disableDefaultUI: true,
+         };
         var infowindow = new google.maps.InfoWindow({
             content:"My town"
         });
@@ -34,8 +24,6 @@ $(document).ready(function(){
         var map = new google.maps.Map(document.getElementById("map"),mapOptions);
         marker.setMap(map);
 
-
-        // google.maps.event.addDomListener(window, 'load', loadMap);
     }
 
 
