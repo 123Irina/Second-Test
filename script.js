@@ -1,7 +1,7 @@
 $(document).ready(function(){
     'use strict';
     function loadMap() {
-    var center = new google.maps.LatLng(49.568819, 34.585753);
+    var center = new google.maps.LatLng(49.568583, 34.585416);
         var marker = new google.maps.Marker({
             position: center,
             draggable:true,
@@ -11,7 +11,7 @@ $(document).ready(function(){
         });
         var mapOptions = {
             center: center,
-            zoom:15,
+            zoom:15.5,
             disableDefaultUI: true,
          };
         var infowindow = new google.maps.InfoWindow({

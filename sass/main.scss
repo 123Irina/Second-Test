@@ -33,7 +33,7 @@ h2 {
 }
 p {
   font-family: $font-open-sans;
-  letter-spacing: 1px;
+  letter-spacing: 0.7px;
   text-align: center;
   margin: 0 auto;
   max-width: 492px;
@@ -172,9 +172,11 @@ section.portfolio {
 ul.slick-dots li {
     margin: 0 2px;
     font-size: 0;
+    width: 15px;
+  height: 15px;
     button {
-      width: 8px;
-      height: 8px;
+      width: 10px;
+      height: 10px;
       border-radius: 5px;
       border: 1px solid #19bd99;
       padding: 2px;
@@ -199,7 +201,7 @@ section.TheTeam {
     margin-bottom: 60px;
   }
   .slick-slider {
-    margin-bottom: 100px;
+    margin-bottom: 120px;
     .slide {
       .forSlides {
         display: flex;
@@ -207,7 +209,7 @@ section.TheTeam {
         width: 75%;
         max-width: 1200px;
         margin: 0 auto;
-        padding-bottom: 55px;
+        padding-bottom: 50px;
         .image {
           position: relative;
           height: max-content;
@@ -251,7 +253,7 @@ section.TheTeam {
           font-family: $font-open-sans;
           font-weight: 300;
           margin-bottom: 0;
-          margin-top: 15px;
+          margin-top: 20px;
         }
 
         h4 {
@@ -265,7 +267,7 @@ section.TheTeam {
           text-align: right;
           text-transform: uppercase;
           margin-top: 0;
-          margin-bottom: 30px;
+          margin-bottom: 20px;
         }
         p{
           max-width: 373px;
@@ -291,11 +293,12 @@ section.TheTeam {
      font-size: 20px;
      line-height: 25px;
      color: rgb(255,255,255);
-     margin-bottom: 35px;
+     margin-bottom: 27px;
+     letter-spacing: 0.8px;
    }
    a {
      font-size: 16px;
-     line-height: 37px;
+     line-height: 36px;
      display: block;
      margin: 0 auto;
      font-family: $font-open-sans;
@@ -313,17 +316,18 @@ section.TheTeam {
    }
  }
 .testimonilas {
-  padding-top: 80px;
+  padding-top: 77px;
   padding-bottom: 100px;
   background-color: #f3f3f3;
   .containerForSecondSlider {
     background-color: white;
-    padding-bottom: 60px;
+    padding-bottom: 50px;
     max-width: 1170px;
     margin: 0 auto;
   }
     h2 {
       color: rgb(51, 59, 70);
+      line-height: 18px;
     }
     p {
       color: rgb(129, 134, 142);
@@ -343,6 +347,7 @@ section.TheTeam {
     height: 130px;
   }
   .text {
+    margin-bottom: 35px;
     p {
       max-width: 757px;
       letter-spacing: 1px;
@@ -355,13 +360,13 @@ section.TheTeam {
       &:nth-child(2){
         color: rgb(25,189,154);
         font-weight: bold;
-        margin-top: 20px;
+        margin-top: 17px;
       }
       &:nth-child(3){
         font-size: 14px;
         line-height: 20px;
         color: rgb(70,70,70);
-        margin-bottom: 45px;
+        //margin-bottom: 45px;
       }
     }
   }
@@ -369,15 +374,15 @@ section.TheTeam {
 
 
 section.contact {
-  padding-top: 75px;
+  padding-top: 70px;
   p {
-    margin-bottom: 70px;
+    margin-bottom: 68px;
   }
   #map {
     min-height: 440px;
     max-width: 100%;
     margin: 0 auto;
-    border: 1px solid grey;
+    border: none;
   }
 }
 
@@ -390,9 +395,12 @@ footer {
     text-align: center;
     font-size: 24px;
     color: rgb(0,0,0);
+    margin: 0 0 16px;
   }
   p {
     margin-bottom: 40px;
+    line-height: 14px;
+    letter-spacing: 0.7px;
   }
   ul {
   max-width: 175px;
